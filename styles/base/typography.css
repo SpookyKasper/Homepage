@@ -1,0 +1,15 @@
+@font-face {
+  font-family: lato;
+  src: url(fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: playfair;
+  src: url(fonts/Playfair_Display/playfair-display.ttf)
+}
+
+.icons img {
+  width: 20px;
+}
+
+
