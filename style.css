@@ -1,0 +1,20 @@
+main {
+}
+
+header .text {
+  font-family: lato;
+}
+
+.icon img {
+  max-width: 20px;
+}
+
+@font-face {
+  font-family: lato;
+  src: url(fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: playfair;
+  src: url(fonts/Playfair_Display/playfair-display.ttf)
+}
