@@ -3,11 +3,11 @@ header {
   margin: var(--main-margin);
   display: flex;
   flex-direction: column;
-  margin-bottom: calc(var(--main-margin) * 5);
+  margin-bottom: 60px;
 }
 
 .blue-background {
-  height: calc(100% + var(--main-margin) * 2);
+  height: calc(100%);
   width: calc(100% + var(--main-margin) * 2);
   position: absolute;
   z-index: -1;
@@ -67,4 +67,52 @@ header {
 .icons img {
   min-width: 30px;
   max-width: 36px;
+}
+
+@media (min-width: 520px) {
+
+  header {
+    display: block;
+    border: 2px solid pink;
+    flex-direction: row;
+  }
+
+  .caption {
+    position: relative;
+  }
+
+  .header-img {
+    max-width: 280px;
+    margin-right: 20px;
+    position: relative;
+    left: -30px;
+    float: left;
+  }
+
+  .hero {
+    border: 2px solid orange;
+  }
+
+  .about-me-text {
+    position: relative;
+    left: -30px;
+    padding: 30px;
+    padding-right: 0px;
+    margin-left: var(--main-margin);
+  }
+
+  .header-text {
+    /* padding: var(--main-margin); */
+    background-color: white;
+  }
+
+  .about-me {
+    display: block;
+    /* background-color: white; */
+    padding: var(--main-margin);
+  }
+
+  .icons img {
+    display: none;
+  }
 }
