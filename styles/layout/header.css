@@ -1,4 +1,71 @@
-.header-img {
-  max-width: 200px;
+:root {
+  --main-margin: 18px
+}
 
+header {
+  border: 1px solid blue;
+  margin: var(--main-margin);
+  display: flex;
+  flex-direction: column;
+}
+
+.blue-background{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  background-image: -webkit-linear-gradient(105deg, white 50%, #004E95 50%);
+}
+
+.hero {
+  position: relative;
+  padding: var(--main-margin);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid green;
+}
+
+.header-img {
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  object-fit: cover;
+  border: 2px solid salmon;
+}
+
+.caption {
+  margin: 0px var(--main-margin);
+  position: absolute;
+  bottom: var(--main-margin);
+  border: 2px solid pink;
+  font-size: 3.5em;
+  color: white;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-text {
+  color: rgb(99, 98, 98);
+  line-height: 25px;
+  margin-bottom: var(--main-margin);
+}
+
+.icons {
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  gap: var(--main-margin);
+}
+
+.icons img {
+  min-width: 30px;
+  max-width: 40px;
 }
