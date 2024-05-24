@@ -6,13 +6,13 @@ header {
   margin-bottom: calc(var(--main-margin) * 5);
 }
 
-.blue-background{
+.blue-background {
   height: calc(100% + var(--main-margin) * 2);
   width: calc(100% + var(--main-margin) * 2);
   position: absolute;
   z-index: -1;
   top: calc(0px - var(--main-margin));
-  background-image: -webkit-linear-gradient(105deg, white 50%, #004E95 50%);
+  background-image: -webkit-linear-gradient(105deg, white 50%, var(--main-color) 50%);
 }
 
 .hero {

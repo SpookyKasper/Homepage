@@ -11,5 +11,6 @@ body {
 }
 
 :root {
-  --main-margin: 16px
+  --main-margin: 16px;
+  --main-color: #004E95;
 }

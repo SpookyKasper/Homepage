@@ -4,7 +4,7 @@ main {
   justify-content: center;
   flex-direction: column;
   margin: var(--main-margin);
-  flex: 1;
+  margin-bottom: calc(var(--main-margin) * 10);
 }
 
 .projects {
@@ -62,4 +62,5 @@ main {
   color: grey;
   font-size: small;
   padding: calc(var(--main-margin) / 2);
+  margin-left: 5px;
 }

@@ -1,0 +1,26 @@
+footer {
+  background-color: var(--main-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-img {
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  margin: var(--main-margin);
+  margin-bottom: calc(var(--main-margin) * 5);
+}
+
+.contact-me h2 {
+  text-align: center;
+}
