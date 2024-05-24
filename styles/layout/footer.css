@@ -29,6 +29,15 @@ footer {
   text-align: center;
 }
 
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-icons img {
+  display: none;
+}
+
 @media (min-width: 520px) {
 
   :root {
@@ -62,5 +71,17 @@ footer {
 
   .icons {
     justify-content: flex-start;
+  }
+
+  .contact-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* border: 2px solid fuchsia; */
+  }
+
+  .contact-icons img {
+    display: block;
+    filter: invert(100%);
   }
 }
