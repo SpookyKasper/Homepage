@@ -45,10 +45,6 @@ footer {
     --main-margin: 32px;
   }
 
-  body {
-    background-color: aquamarine;
-  }
-
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;

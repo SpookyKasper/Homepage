@@ -4,6 +4,10 @@ header {
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
+  position: relative;
+  padding: var(--main-margin);
+  justify-content: center;
+  align-items: center;
 }
 
 .blue-background {
@@ -15,14 +19,8 @@ header {
   background-image: -webkit-linear-gradient(105deg, white 50%, var(--main-color) 50%);
 }
 
-.hero {
-  /* border: 2px solid green; */
-  position: relative;
-  padding: var(--main-margin);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.header-text h2 {
+  text-align: center;
 }
 
 .header-img {
@@ -33,13 +31,17 @@ header {
   object-fit: cover;
 }
 
+.img-container {
+  border: 2px solid brown;
+  position: relative;
+}
+
 .caption {
-  /* border: 2px solid pink; */
-  padding: calc(var(--main-margin)/2);
-  margin: 0px var(--main-margin);
   position: absolute;
-  bottom: calc(var(--main-margin)/2);
-  font-size: 3.5em;
+  bottom: 0px;
+  border: 2px solid pink;
+  padding: 20px;
+  font-size: 48px;
   color: white;
 }
 
@@ -71,45 +73,53 @@ header {
 
 @media (min-width: 520px) {
 
+  body {
+    /* background-color: var(--main-color); */
+  }
+
   header {
-    display: block;
-    border: 2px solid pink;
-    flex-direction: row;
+    background-color: var(--main-color);
+    padding: 64px;
+    border: 2px solid brown;
   }
 
   .caption {
-    position: relative;
+    color: white;
+    border: 2px solid salmon;
   }
 
   .header-img {
-    max-width: 280px;
-    margin-right: 20px;
+    max-width: 350px;
+    max-height: 400px;
     position: relative;
-    left: -30px;
+    top: -60px;
+    left: -60px;
     float: left;
   }
 
-  .hero {
-    border: 2px solid orange;
+  .header-text h2{
+    text-align: left;
+  }
+
+  .header-text {
+    background-color: white;
+    padding: var(--main-margin);
+    min-width: 600px;
+  }
+
+  .about-me {
+    border: 2px solid olivedrab;
+    display: block;
+    max-width: 750px;
   }
 
   .about-me-text {
     position: relative;
-    left: -30px;
+    top: -25px;
+    left: -40px;
     padding: 30px;
     padding-right: 0px;
     margin-left: var(--main-margin);
-  }
-
-  .header-text {
-    /* padding: var(--main-margin); */
-    background-color: white;
-  }
-
-  .about-me {
-    display: block;
-    /* background-color: white; */
-    padding: var(--main-margin);
   }
 
   .icons img {
