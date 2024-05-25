@@ -12,7 +12,7 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 40px;
 }
 
 .projects h2 {
@@ -28,7 +28,7 @@ main {
   min-width: calc(300px - var(--main-margin));
   display: grid;
   grid-template-rows: 5fr 3fr;
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2); /* Basic shadow */
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
 }
 
 .project-img {
@@ -44,7 +44,7 @@ main {
 }
 
 .name-and-icons {
-  border: 2px solid pink;
+  border-bottom: 0.5px solid lightgrey;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,9 +73,20 @@ main {
 
   .projects {
     padding: var(--main-margin);
+    gap: 80px;
   }
 
   .projects h2 {
     text-align: left;
+  }
+
+  .project {
+    min-width: 280px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project {
+    min-width: 320px;
   }
 }
