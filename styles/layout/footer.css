@@ -82,3 +82,15 @@ footer {
     filter: invert(100%);
   }
 }
+
+@media (min-width: 1200px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-img {
+    min-width: 800px;
+  }
+}
